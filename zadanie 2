@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int tab[9];
-    int x=3;
-    for (int i = 0; i < 10; i++){
-        
-        tab[i] = x;
-        x+=3;
+int x = 10;
+	int tabInt[x];
+	int c = 3;
+	for (int i = 0; i < x; i++) {
+		tabInt[i] = c;
+		c += 3;
+	}
+	for (int i = 0; i < x; i+=2) {
+		cout << tabInt[i] << " ";
+	}
 }
-    for(int i = 0; i < 10; i+=2){
-        cout << tab[i] << endl;
 
-    }
-}
